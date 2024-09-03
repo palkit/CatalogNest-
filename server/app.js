@@ -4,12 +4,10 @@ const cors = require('cors')
 const app = express()
 const port = 3000
 
-const eventsRoute = require('./routes/events')
+const productsRoute = require('./routes/products')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.use(cors({
-    origin: 'http://localhost:5173',
-}))
+app.use(cors())
 
 app.use('/uploads',express.static('uploads'))
 
@@ -17,8 +15,7 @@ app.use('/uploads',express.static('uploads'))
 connectDB()
 
 
-app.use('/events',eventsRoute)
-app.use('/venues',require('./routes/venues'))
+app.use('/products',productsRoute)
 
 app.get('/',(req,res)=>{
     res.send('Hello World')

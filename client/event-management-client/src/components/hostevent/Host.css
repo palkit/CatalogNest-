@@ -140,7 +140,7 @@ label {
     justify-content: center;
 }
 
-.createeventinfo {
+.createproductsinfo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,13 +149,13 @@ label {
 
 }
 
-.createeventinfo h2 {
+.createproductsinfo h2 {
     font-weight: 300px;
     font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.eventdescription {
+.productsdescription {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -163,14 +163,14 @@ label {
     flex-direction: column;
 }
 
-.eventdescription h2 {
+.productsdescription h2 {
     font-weight: 600;
     font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-.eventdescription form {
+.productsdescription form {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -197,7 +197,7 @@ textarea {
     color: transparent;
 } */
 
-/* .eventdescription form .inputimg {
+/* .productsdescription form .inputimg {
     width: 813px;
     height: 254px;
     background-color: #ECECEC;

@@ -7,7 +7,7 @@ const { default: mongoose } = require('mongoose');
 // get all Products sorted according to the start date such that the products with the earliest start date comes first
 router.get('/', async (req, res) => {
     try {
-        const products = await Products.find();
+        const products = await Products.find().sort({ _id: -1 });
         res.json(products);
     } catch (err) {
         res.json({ message: err });

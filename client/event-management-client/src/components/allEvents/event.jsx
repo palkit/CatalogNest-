@@ -6,14 +6,14 @@ const Event = () => {
   const [weekdayFilter, setWeekdayFilter] = useState('All');
   const [eventTypeFilter, setEventTypeFilter] = useState('All');
   const [categoryFilter, setCategoryFilter] = useState('All');
-  const [events,setEvents] = useState([])
+  const [Products,setProducts] = useState([])
 
   //function to fetch all events from the database
     const fetchEvents = async () => {
-        const response = await fetch('http://localhost:3000/events');
+        const response = await fetch('http://localhost:3000/products');
         const data = await response.json();
         console.log(data)
-        setEvents(data);
+        setProducts(data);
     };
 
     useEffect(() => {
@@ -80,8 +80,8 @@ const Event = () => {
       </div>
       
       <div className="events-grid-all">
-        {events.map((event) => (
-            <EventCard key={event._id} title={event.title} startdate={event.startDate} image={event.banner} isFree={event.price>0?false:true}/>
+        {Products.map((product) => (
+            <EventCard key={product._id} name={product.name}  image={product.image} description={product.description} price={product.price}/>
           ))}
       </div>
     </div>

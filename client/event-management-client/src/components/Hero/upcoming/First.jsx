@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 
 const UpcomingEvents = () => {
 
-  const [events,setEvents] = useState([])
+  const [Products,setProducts] = useState([])
 
   //function to fetch all events from the database
     const fetchEvents = async () => {
-        const response = await fetch('http://localhost:3000/events');
+        const response = await fetch('http://localhost:3000/Products');
         const data = await response.json();
         console.log(data)
         //save only first six events
-        data.length = 6;
-        setEvents(data);
+        // data.length = 6;
+        setProducts(data);
     };
 
     useEffect(() => {
@@ -26,8 +26,8 @@ const UpcomingEvents = () => {
       <h1>Products <span>Listed</span> </h1>
 
       <div className="events-grid">
-        {events.map((event) => (
-          <EventCard key={event._id} title={event.title} startdate={event.startDate} image={event.banner} isFree={event.price>0?false:true}/>
+        {Products.map((product) => (
+          <EventCard key={product._id} category={product.category} name={product.name} image={product.image} description={product.description} price={product.price}/>
         ))}
       </div>
 

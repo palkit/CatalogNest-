@@ -52,6 +52,7 @@ const Host = () => {
         const productPrice = document.getElementById('product-price').value
         const productImage = document.getElementById('product-image').files[0]
         const productDescription = document.getElementById('Product-description').value
+        
 
         const product = {
             name: productName,
@@ -61,7 +62,8 @@ const Host = () => {
             description: productDescription
         }
 
-        const res = await axios.post('http://localhost:3000/products', products,
+
+        const res = await axios.post('http://localhost:3000/products', product,
             {
                 headers: {
                     'Content-Type': 'multipart/form-data'

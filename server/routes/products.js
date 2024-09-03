@@ -4,7 +4,7 @@ const Products = require('../models/Products');
 const upload = require('../config/multerconfig');
 const { default: mongoose } = require('mongoose');
 
-// get all Products sorted according to the start date such that the event with the earliest start date comes first
+// get all Products sorted according to the start date such that the products with the earliest start date comes first
 router.get('/', async (req, res) => {
     try {
         const products = await Products.find();
@@ -14,20 +14,22 @@ router.get('/', async (req, res) => {
     }
 });
 
-// get details of a particular event by id
-router.get('/:productId', async (req, res) => {
+// get details of a particular products by id
+router.get('/:productsId', async (req, res) => {
     try {
-        const event = await Products.findById(req.params.eventId);
-        //send both event and venue details
+        const products = await Products.findById(req.params.productsId);
+        //send products details
         res.json({products}); 
     } catch (err) {
         res.json({ message: err });
     }
 });
 
-// endpoint to create new event
+// endpoint to create new products
 router.post('/',upload.single('image'), async (req, res) => {
     const imageUrl = `/uploads/${req.file.filename}`
+
+    console.log(req.body)
 
     const products = new Products({
         name: req.body.name,
@@ -38,7 +40,7 @@ router.post('/',upload.single('image'), async (req, res) => {
     });
 
     try {
-        const savedProducts = await event.save();
+        const savedProducts = await products.save();
         res.status(200).json(savedProducts);
     } catch (err) {
         console.log(err)    

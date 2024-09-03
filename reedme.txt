@@ -1,0 +1,8 @@
+cd client
+cd event-manage-client
+npm install
+npm run dev
+
+cd server
+npm install
+nodemon app.js

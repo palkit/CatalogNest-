@@ -8,10 +8,7 @@ const EventHive = () => {
         <div className="overlay">
           <h2><span>Create, Manage, and Sell</span> Bulk Orders</h2>
         </div>
-        <div className="hero-nav">
-          <button className="prev">&lt;</button>
-          <button className="next">&gt;</button>
-        </div>
+        
       </section>
         <section className="search">
           <div className="search-container">

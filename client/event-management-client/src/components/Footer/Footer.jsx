@@ -6,7 +6,7 @@ export default function Footer() {
         <>
             <footer className="footer-bar">
                 <div className="logo">
-                    <h1>Event <span>Hive</span></h1>
+                    <h1>Catalog <span>Nest</span></h1>
                 </div>
 
                 <div className="subscribe-form">
@@ -42,7 +42,7 @@ export default function Footer() {
                     </div>
 
                     <div className="copy-right">
-                        <p>Non Copyrighted © 2023 Upload by EventHive
+                        <p>Non Copyrighted © 2023 Upload by CatalogNest
                         </p>
                     </div>
                 </div>

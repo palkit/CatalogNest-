@@ -15,7 +15,7 @@ body {
 }
 
 .upcoming-events h1 span {
-  color: #7848f4;
+  color: #cc0073;
 }
 
 .filters {
@@ -36,7 +36,7 @@ body {
 
 .filters select:focus {
   outline: none;
-  border-color: #7848f4;
+  border-color: #ff199b;
 }
 
 .events-grid {
@@ -47,7 +47,7 @@ body {
 }
 
 .load-more {
-  background-color: #7848f4;
+  background-color: #ff199b;
   color: #f8f8fa;
   padding: 10px 20px;
   border: none;
@@ -79,11 +79,11 @@ body {
   }
 
   .upcoming-events h1 span{
-    color: #7848F4;
+    color: #ff199b;
   }
 
 .upcoming-events .wordevent{
-    color: blueviolet;
+    color: ff199b;
 }
   
   .events-grid {
@@ -96,7 +96,7 @@ body {
   
   .load-more {
     top:10px;
-    background-color: #7848F4;
+    background-color: #ff199b;
     color: #F8F8FA;
     padding: 10px 20px;
     border: none;

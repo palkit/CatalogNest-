@@ -2,7 +2,6 @@
     position: relative;
     height: 303px; 
     margin-top: 160px;
-    
 }
 
 .create .createbox .createimg {
@@ -19,9 +18,10 @@
     /* width: 100vw; */
     /* height: 217px;  */
     height: 85%;
-    background-color: #10107B;
+    background-color: #700063;
     /* padding: 20px 0px; */
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -47,7 +47,7 @@
     font-weight: 700;
     font-size: 18px;
     color: #F8F8FA;
-    background-color:#7848F4;
+    background-color:#ff199b;
     /* top: 2168px; */
     left: 696px;
     gap: 0px;

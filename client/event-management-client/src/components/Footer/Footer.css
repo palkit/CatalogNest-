@@ -1,4 +1,5 @@
 .footer-bar {
+    padding: 5vw;
      display: flex; 
     margin-top: 50px;
     position:static;
@@ -7,7 +8,12 @@
     justify-content: space-around;
     gap: 10px;
     flex-direction: column;
-    background-color: #10107B;
+    background-color: #700063;
+    color: #ff199b;
+}
+
+.footer-bar .logo h1 span{
+    color: #ff5cb8;
 }
 
 .logo,
@@ -33,7 +39,7 @@
 .subscribe-form button {
     cursor: pointer;
     color: white;
-    background-color: #7848F4;
+    background-color: #ff199b;
     font-size: 12px;
     font-weight: bold;
     border: none;
@@ -83,7 +89,7 @@
 .language button{
     cursor: pointer;
     color: white;
-    background-color: #7848F4;
+    background-color: #ff199b;
     font-size: 12px;
     font-weight: bold;
     border: none;

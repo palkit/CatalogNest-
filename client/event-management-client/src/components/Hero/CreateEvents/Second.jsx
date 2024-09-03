@@ -11,9 +11,8 @@ const second = () => {
                 </div>
                 <div className="createEvent">
                     <h1><img src="/src/assets/event.svg" alt="" /></h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem, ipsum dolor.</p>
-                    <Link to={"./create"}><button>Create Events</button></Link>
-                    
+                    <p>Create your Own Catalog on CatalogNest and Start Selling your Products to Retailers in bulk all across India.</p>
+                    <Link to={"./create"}><button>Create Catalog</button></Link>
                 </div>
             </div>
         </div>

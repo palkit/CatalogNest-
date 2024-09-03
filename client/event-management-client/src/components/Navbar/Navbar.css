@@ -6,9 +6,13 @@
     margin:auto;
 }
 
+.logo{
+    color: #3e3e3e;
+}
+
 .logo span {
     font-size: 22px;
-    color: #7848F4;
+    color: #cc0073;
 }
 
 .logo h1,
@@ -38,6 +42,6 @@
 }
 .buttons .sign-up {
     color: white;
-    background-color: #7848F4;
+    background-color: #cc0073;
     font-weight: bold;
 }

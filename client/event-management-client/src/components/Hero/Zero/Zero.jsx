@@ -6,33 +6,35 @@ const EventHive = () => {
     <main>
       <section className="hero">
         <div className="overlay">
-          <h2>MADE FOR THOSE WHO DO</h2>
+          <h2><span>Create, Manage, and Sell</span> Bulk Orders</h2>
         </div>
         <div className="hero-nav">
           <button className="prev">&lt;</button>
           <button className="next">&gt;</button>
         </div>
+      </section>
         <section className="search">
           <div className="search-container">
             <div className="search-section">
-              <h3 className="section-heading">Category</h3>
+              <h3 className="section-heading">Product Category</h3>
               <select className="category-select">
                 <option value="all">All Categories</option>
-                <option value="music">Music</option>
-                <option value="sports">Sports</option>
-                <option value="theatre">Theatre</option>
+                <option value="music">Fashion & Apparel</option>
+                <option value="sports">Home & Kitchen</option>
+                <option value="theatre">Health & Beauty</option>
+                <option value="theatre">Electronics & Gadgets</option>
               </select>
             </div>
-            <div className="search-section">
+            {/* <div className="search-section">
               <h3 className="section-heading">Location</h3>
               <select className="location-select">
-                <option value="all">All Locations</option>
-                <option value="new-york">New York</option>
-                <option value="los-angeles">Los Angeles</option>
-                <option value="chicago">Chicago</option>
+                <option value="all">Selling Locations</option>
+                <option value="new-york">Mumbai</option>
+                <option value="los-angeles">Delhi</option>
+                <option value="chicago">Chandigarh</option>
               </select>
-            </div>
-            <div className="search-section">
+            </div> */}
+            {/* <div className="search-section">
               <h3 className="section-heading">Date</h3>
               <input type="date" className="date-input" />
             </div>
@@ -40,10 +42,9 @@ const EventHive = () => {
               <button className="search-btn">
                 <img src="/src/assets/search.svg" alt="Search" />
               </button>
-            </div>
+            </div> */}
           </div>
         </section>
-      </section>
     </main>
   );
 };

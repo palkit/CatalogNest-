@@ -23,7 +23,7 @@ const UpcomingEvents = () => {
 
   return (
     <div className="upcoming-events">
-      <h1>Upcoming <span>Events</span> </h1>
+      <h1>Products <span>Listed</span> </h1>
 
       <div className="events-grid">
         {events.map((event) => (
@@ -32,7 +32,7 @@ const UpcomingEvents = () => {
       </div>
 
       <div className="loadbutton">
-        <Link to={"./events"} className="load-more">Load more...</Link>
+        <Link to={"./events"} className="load-more">See more</Link>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react'
 import './EventCard.css';
 
-const EventCard = ({ title, startdate, location, image, isFree }) => {
+const EventCard = ({ title, description, location, image, isFree }) => {
     return (
         <div className='firstbox'>
             <div className="event-card">
@@ -12,7 +12,10 @@ const EventCard = ({ title, startdate, location, image, isFree }) => {
                 <div className="event-info">
                     <h3>{title?title:'No Name'}</h3>
                     <p>
-                        {startdate} - {location}
+                        {location ? location : 'India'} 
+                    </p>
+                    <p>
+                        {description}
                     </p>
                     <h6>Currently Available </h6>
                 </div>

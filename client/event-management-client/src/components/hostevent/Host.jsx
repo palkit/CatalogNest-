@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './Host.css'
 
@@ -7,7 +8,27 @@ const Host = () => {
     const [venues, setVenues] = useState([])
 
     //dymaically adding categories
-    const categories = ['Music', 'Dance', 'Art', 'Theatre', 'Comedy', 'Food', 'Sports', 'Fitness', 'Health', 'Fashion', 'Technology', 'Business', 'Science', 'Travel', 'Religion', 'Charity', 'Education', 'Family', 'Community', 'Film', 'Media', 'Government', 'Home', 'Auto', 'Hobbies', 'Other']
+    const categories = [
+        "Electronics & Gadgets",
+        "Fashion & Apparel",
+        "Home & Kitchen",
+        "Health & Beauty",
+        "Sports & Outdoor Gear",
+        "Books & Stationery",
+        "Toys & Games",
+        "Automotive Accessories",
+        "Jewelry & Watches",
+        "Baby & Kids",
+        "Furniture & Decor",
+        "Pet Supplies",
+        "Groceries & Gourmet Food",
+        "Musical Instruments",
+        "Office Supplies",
+        "Travel & Luggage",
+        "Arts & Crafts",
+        "Fitness & Wellness",
+        "Garden & Outdoor"
+      ];
     const selectCategory = useRef(null)
     const selectVenue = useRef(null)
     
@@ -48,28 +69,28 @@ const Host = () => {
     }, [venues])
     // when user clicks on create event button, call a function to make a post request to server to create event
     const createEvent = async () => {
-        const eventTitle = document.getElementById('event-title').value
-        const eventCategory = document.getElementById('event-category').value
+        const productName = document.getElementById('product-name').value
+        const productCategory = document.getElementById('product-category').value
         const eventVenue = document.getElementById('event-venue').value
-        const eventPrice = document.getElementById('event-price').value
+        const productPrice = document.getElementById('product-price').value
         const startTime = document.getElementById('start-time').value
         const endTime = document.getElementById('end-time').value
         const startDate = document.getElementById('start-date').value
         const endDate = document.getElementById('end-date').value
-        const eventImage = document.getElementById('event-image').files[0]
-        const eventDescription = document.getElementById('event-description').value
+        const productImage = document.getElementById('product-image').files[0]
+        const productDescription = document.getElementById('Product-description').value
 
         const event = {
-            title: eventTitle,
-            category: eventCategory,
+            title: productName,
+            category: productCategory,
             venue: eventVenue,
-            price: eventPrice,
+            price: productPrice,
             startTime: startTime,
             endTime: endTime,
             startDate: startDate,
             endDate: endDate,
-            image: eventImage,
-            description: eventDescription
+            image: productImage,
+            description: productDescription
         }
 
         const res = await axios.post('http://localhost:3000/events', event,
@@ -91,16 +112,16 @@ const Host = () => {
     return (
         <div className="container">
             <div className="createeventinfo">
-                <h2>Create Event</h2>
+                <h2>Create Catalog</h2>
                 <form>
                     <div className="Fgrp">
                         <div className="in1">
-                            <label htmlFor="event-title">Event Title:</label>
-                            <input type="text" id="event-title" name="event-title" placeholder="Enter Title" />
+                            <label htmlFor="product-name">Product Name:</label>
+                            <input type="text" id="product-name" name="product-name" placeholder="Enter Product Name" />
                         </div>
                         <div className="in1">
-                            <label htmlFor="event-category">Event Category:</label>
-                            <select id="event-category" defaultValue={""} ref={selectCategory} name="event-category">
+                            <label htmlFor="product-category">Product Category:</label>
+                            <select id="product-category" defaultValue={""} ref={selectCategory} name="product-category">
                                 <option value="" disabled>Select Category</option>
                             </select>
                         </div>
@@ -111,8 +132,8 @@ const Host = () => {
                             </select>
                         </div>
                         <div className="in1">
-                            <label htmlFor="event-date">Booking Price:</label>
-                            <input type="number" id="event-price" name="event-price" placeholder="Enter Price" />
+                            <label htmlFor="product-price">Product Price:</label>
+                            <input type="number" id="product-price" name="product-price" placeholder="Enter Price" />
                         </div>
                     </div>
                     <div className="mainformgroup">
@@ -141,19 +162,19 @@ const Host = () => {
                 </form>
             </div>
             <div className="eventdescription">
-                <h2>Event Description</h2>
+                <h2>Product Description</h2>
                 <form>
                     <div className="in1">
-                        <label htmlFor="event-image">Event Banner:</label>
+                        <label htmlFor="product-image">Product Image</label>
                         <div className="inputimg">
-                            <input type="file" id="event-image" name="event-image" />
+                            <input type="file" id="product-image" name="product-image" />
                         </div>
                     </div>
                     <div className="in1">
-                        <label htmlFor="event-description">Event Description:</label>
-                        <textarea id="event-description" name="event-description" placeholder="Type here..."></textarea>
+                        <label htmlFor="Product-description">Product Description:</label>
+                        <textarea id="Product-description" name="Product-description" placeholder="Type here..."></textarea>
                     </div>
-                    <button type="button" className="hostbutton" onClick={createEvent}>Create event</button>
+                    <Link to={"/"}  type="button" className="hostbutton" onClick={createEvent}>List Product</Link>
                 </form>
             </div>
 

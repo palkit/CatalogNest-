@@ -1,5 +1,6 @@
 .event-hive-hero {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 }
@@ -19,17 +20,19 @@
 }
 
 .hero-content h1 {
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 700;
 }
 
 .hero-content span {
-  color: #7848F4;
+  color: #ff199b;
 }
 
 .hero-image {
-  width: 923px;
-  height: 450px;
+  margin-left: 5vw;
+  width: 40vw;
+  border-radius: 2vw;
+  /* height: 450px; */
 }
 
 .stats {
@@ -40,7 +43,7 @@
 .stats div {
   padding: 2vw;
   border: none;
-  background-color: #7848F4;
+  background-color: #ff199b;
   border-radius: 10px;
 }
 
@@ -57,6 +60,7 @@
 }
 
 .event-card-section {
+  margin-top: 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,7 +68,7 @@
 
 }
 .event-card-section span{
-  color: #7848F4;
+  color: #ff199b;
 }
 .event-card-section h1{
   font-size: 36px;

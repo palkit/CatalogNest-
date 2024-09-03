@@ -19,10 +19,10 @@ const EventHive = () => {
               <h3 className="section-heading">Product Category</h3>
               <select className="category-select">
                 <option value="all">All Categories</option>
-                <option value="music">Fashion & Apparel</option>
-                <option value="sports">Home & Kitchen</option>
-                <option value="theatre">Health & Beauty</option>
-                <option value="theatre">Electronics & Gadgets</option>
+                <option value="Fashion & Apparel">Fashion & Apparel</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Health & Beauty">Health & Beauty</option>
+                <option value="Electronics & Gadgets">Electronics & Gadgets</option>
               </select>
             </div>
             {/* <div className="search-section">

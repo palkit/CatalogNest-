@@ -30,27 +30,27 @@ const Event = () => {
     <div>
       <div className="event-hive-hero">
         <div className="hero-content">
-          <h2>Thriving Above Event Expectations.</h2>
-          <h1>Event <span>Hive</span>-ing the Best.Day. Ever.</h1>
+          <h2>Wanna Sell in Bulk Orders to Retailers?</h2>
+          <h1>Catalog <span>Nest</span> is there for you...</h1>
           <div className="stats">
             <div>
               <span>2k+</span>
-              <p>Total Events Hosted</p>
+              <p>Factory Sellers</p>
             </div>
             <div>
-              <span>100+</span>
-              <p>Total Events Live</p>
+              <span>10,000+</span>
+              <p>Daily Customers</p>
             </div>
           </div>
         </div>
 
-        <img src="src/assets/event-Image.svg" alt="Event Hive Hero Image" className="hero-image" />
+        <img src="src/assets/event-Image.webp" alt="Event Hive Hero Image" className="hero-image" />
       </div>
 
       <div className="event-card-section">
-        <h1><span>Events</span> Around You</h1>
+        <h1><span>Products Listed</span></h1>
         <div className="filter-section">
-          <select onChange={handleFilterChange(setWeekdayFilter)}>
+          {/* <select onChange={handleFilterChange(setWeekdayFilter)}>
             <option value="All">Weekdays</option>
             <option value="Monday">Monday</option>
             <option value="Tuesday">Tuesday</option>
@@ -67,14 +67,14 @@ const Event = () => {
             <option value="Webinar">Webinar</option>
             <option value="Conference">Conference</option>
             <option value="Meetup">Meetup</option>
-          </select>
+          </select> */}
 
           <select onChange={handleFilterChange(setCategoryFilter)}>
             <option value="All">All Categories</option>
-            <option value="Education">Education</option>
-            <option value="Business">Business</option>
-            <option value="Technology">Technology</option>
-            <option value="Health">Health</option>
+            <option value="Fashion & Apparel">Fashion & Apparel</option>
+              <option value="Home & Kitchen">Home & Kitchen</option>
+              <option value="Health & Beauty">Health & Beauty</option>
+              <option value="Electronics & Gadgets">Electronics & Gadgets</option>
           </select>
         </div>
       </div>

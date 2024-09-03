@@ -51,6 +51,10 @@ label {
     flex-direction: column;
 }
 
+.in1:nth-child(3){
+    display: none;
+}
+
 
 
 .in1 select{
@@ -81,7 +85,7 @@ label {
 
 .mainformgroup {
     margin-top: 30px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 30px;
 }
@@ -202,7 +206,7 @@ textarea {
 
 
 .hostbutton {
-    background: #7848F4;
+    background: #ff199b;
     width: 813px;
     height: 49px;
     padding: 15px 40px 15px 40px;

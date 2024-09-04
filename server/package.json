@@ -1,5 +1,5 @@
 {
-  "name": "event-management-server",
+  "name": "catalog-nest",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "dev": "nodemon main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kavyam Sachdeva",
+  "author": "Catalog Nest",
   "license": "ISC",
   "description": "",
   "dependencies": {
